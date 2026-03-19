@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PSM">
         <activity
-            android:name=".first_app.MenuActivity"
+            android:name=".first_app.SegundoAvancePSM"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,13 +21,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".first_app.SegundoAvancePSM"
+            android:name=".first_app.MenuActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
