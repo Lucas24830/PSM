@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.psm.R
 
+
 class SegundoAvancePSM : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +34,18 @@ class SegundoAvancePSM : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        val btnHistorial = findViewById<CardView>(R.id.btnHistorial)
+
+        btnHistorial.setOnClickListener {
+            val intent = Intent(this, Historial::class.java)
+            startActivity(intent)
+        }
+        val btnAdministrar = findViewById<CardView>(R.id.btnAdministrar)
+
+        btnAdministrar.setOnClickListener {
+            val intent = Intent(this, Administrar::class.java)
+            startActivity(intent)
         }
     }
 }

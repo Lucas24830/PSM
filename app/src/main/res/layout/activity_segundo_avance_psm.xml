@@ -109,6 +109,7 @@
 
         <!-- Tarjeta 3 -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/btnHistorial"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_marginBottom="15dp"
@@ -116,7 +117,7 @@
             app:cardElevation="4dp">
 
             <TextView
-                android:text="Mis Pedidos"
+                android:text="Historial de pedidos"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:padding="20dp"
@@ -127,6 +128,7 @@
 
         <!-- Tarjeta 4 -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/btnAdministrar"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             app:cardCornerRadius="15dp"

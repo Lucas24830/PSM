@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F2F2F2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear Usuario"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="60dp"/>
+
+
+    <RadioGroup
+        android:id="@+id/rgTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliente" />
+
+        <RadioButton
+            android:id="@+id/rbTrabajador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trabajador" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nombre"
+        android:layout_marginTop="10dp"/>
+
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Teléfono"
+        android:inputType="phone"
+        android:layout_marginTop="10dp"/>
+
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Usuario"
+        android:layout_marginTop="10dp"/>
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"/>
+
+
+    <!-- Botón -->
+
+    <EditText
+        android:id="@+id/etRol"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="Rol (solo trabajador)" />
+
+    <CheckBox
+        android:id="@+id/cbActivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Activo" />
+
+    <Button
+        android:id="@+id/btnCrear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#FF6A00"
+        android:text="Crear cuenta"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

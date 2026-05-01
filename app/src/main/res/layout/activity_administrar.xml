@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainAdmin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tituloAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Administrar Menú"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:gravity="center"/>
+
+    <!-- Botón flotante (+) -->
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF6A00"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:layout_below="@id/tituloAdmin"/>
+
+    <!-- Contenido vacío -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:tint="#BDBDBD"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No hay productos"
+            android:textSize="18sp"
+            android:textColor="#777777"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agrega nuevos platillos"
+            android:textSize="14sp"
+            android:textColor="#999999"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
