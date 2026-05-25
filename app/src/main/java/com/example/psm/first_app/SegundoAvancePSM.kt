@@ -8,6 +8,7 @@ import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.psm.R
+import android.widget.Toast
 
 
 class SegundoAvancePSM : AppCompatActivity() {
@@ -25,8 +26,13 @@ class SegundoAvancePSM : AppCompatActivity() {
 
         val btnMiPedido = findViewById<CardView>(R.id.btnMiPedido)
 
+        findViewById<CardView>(R.id.btnMiPedido)
+
         btnMiPedido.setOnClickListener {
-            val intent = Intent(this, MiPedidoActivity::class.java)
+
+            val intent =
+                Intent(this, MiPedidoActivity::class.java)
+
             startActivity(intent)
         }
 
@@ -44,8 +50,20 @@ class SegundoAvancePSM : AppCompatActivity() {
         val btnAdministrar = findViewById<CardView>(R.id.btnAdministrar)
 
         btnAdministrar.setOnClickListener {
-            val intent = Intent(this, Administrar::class.java)
-            startActivity(intent)
+
+            if (Sesion.esTrabajador) {
+
+                val intent = Intent(this, Administrar::class.java)
+                startActivity(intent)
+
+            } else {
+
+                Toast.makeText(
+                    this,
+                    "Solo trabajadores pueden acceder",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
         }
     }
 }

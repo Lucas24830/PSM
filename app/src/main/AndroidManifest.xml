@@ -12,23 +12,45 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PSM">
 
-        <!-- Pantalla principal -->
         <activity
             android:name=".first_app.Inicio"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
-        <!-- Otras pantallas -->
-        <activity android:name=".first_app.MenuActivity" android:exported="true"/>
-        <activity android:name=".first_app.MiPedidoActivity" android:exported="true"/>
-        <activity android:name=".first_app.Historial" android:exported="true"/>
-        <activity android:name=".first_app.Administrar" android:exported="true"/>
-        <activity android:name=".first_app.SegundoAvancePSM" android:exported="true"/>
-        <activity android:name=".first_app.Usuario" android:exported="true"/>
+        <activity
+            android:name=".first_app.Usuario"
+            android:exported="false" />
+
+        <activity
+            android:name=".first_app.SegundoAvancePSM"
+            android:exported="false" />
+
+        <activity
+            android:name=".first_app.MenuActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".first_app.MiPedidoActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".first_app.Historial"
+            android:exported="false" />
+
+        <activity
+            android:name=".first_app.Administrar"
+            android:exported="false" />
+
+        <activity
+            android:name=".first_app.AgregarProducto"
+            android:exported="false" />
 
     </application>
 
